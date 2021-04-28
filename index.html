@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ian Fraser "Lemmy" Kilmister</title>
-  <meta property="title" content="Lemmy from Motorhead"/>
-  <meta property="description" content="That’s The Way I Like It Baby, I Don’t Wanna Live Forever"/>
-  <link rel="canonical" href="https://vilissm.github.io/"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
 
-  <meta property="og:title" content="Lemmy from Motorhead"/>
-  <meta property="og:description" content="That’s The Way I Like It Baby, I Don’t Wanna Live Forever"/>
-  <meta property="og:image" content="https://i.insider.com/5682452ac08a80872f8b4788?width=1000&format=jpeg&auto=webp"/>
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+nav {
+    font-family: "Zen Dots", cursive;
+    padding: 1rem;
+    }
+
+.nav li {
+    background-color: rgba(248, 10, 10, 0.326);
+    border-radius: 5px 10px;
+    text-align: center;
+            }
+
+.nav ul {
+    *zoom:1;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.nav ul:before,.nav ul:after {
+    content:"";
+    display:table;
+}
+.nav ul:after {
+    clear:both;
+}
+.nav ul > li {
+    float:left;
+    position:relative;
+}
+.nav a {
+    display:block;
+    padding:10px 20px;
+    line-height:1.2em;
+    color:#fff;
+}
+.nav a:hover {
+    text-decoration:none;
+    background:#595959;
+}
+.nav li ul li {
+    width:200px;
+}
+.nav li ul a {
+    border:none;
+}
+.nav li ul a:hover {
+    background:rgba(0,0,0,0.2);
+}
+
+.nav li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+    visibility:hidden;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:200ms ease;
+    -moz-transition:200ms ease;
+    -o-transition:200ms ease;
+    transition:200ms ease;
+}
+.nav ul > li:hover ul {
+    visibility:visible;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+    </style>
 </head>
 <body>
-  <style>
-    h1 {text-align: center;}
-    p {text-align: center;}
-    ol {text-align: center;}
-
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-  </style>
-    <h1>Ian Fraser "Lemmy" Kilmister</h1>
-    <hr>
-    <img src="https://sleazeroxx.com/wp-content/uploads/Lemmy-photo.jpg" alt="Lemmy" class="center">
-    <hr>
-    <p><b>Ian Fraser Kilmister (24 December 1945 – 28 December 2015), better known as Lemmy, was a British singer, songwriter, and musician. He is best known as the founder, lead singer, bassist, primary songwriter and only continuous member of the British rock band Motörhead.</b></p>
-    <hr>
-    <h1>Facts about Lemmy</h1>
-    <ul>
-      <strong><ol>Janet Jackson fan</ol>
-      <ol>Kicked out of Hawkwind</ol>
-      <ol>Roadie for Jimi Hendrix</ol>
-      <ol>Lemmy was not immortal</ol>
-      <ol>Lemmy wrote the lyrics to Ozzy Osbourne’s 1991</ol>
-      <ol>He did not pick up bass until he was 23</ol></strong>
-    </ul>      
-    <hr>
-      
+    <nav class="nav" id="nav_id">
+        <ul>
+            <li>
+                <a href="#">Button</a>
+                <ul>
+                    <li><a href="#">A hidden button</a></li>
+                    <li><a href="#">A button underneath a hidden button</a></li>
+                    <li><a href="#">Button</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">More Buttons!</a>
+                <ul>
+                    <li><a href="#">Secret Button</a></li>
+                    <li><a href="#">Button goes BRRR</a></li>
+                    <li><a href="#">Button</a></li>
+                </ul>
+            </li>
+        </ul>
 </body>
 </html>
