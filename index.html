@@ -8,69 +8,66 @@
 <style>
 
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
-nav {
-    font-family: "Zen Dots", cursive;
-    padding: 1rem;
-    }
-
-.nav li {
-    background-color: rgba(248, 10, 10, 0.326);
-    border-radius: 5px 10px;
-    text-align: center;
+    nav {
+        font-family: "Zen Dots", cursive;
+        padding: 1rem;
+        }
+    .nav li {
+        background-color: rgba(248, 10, 10, 0.326);
+        border-radius: 5px 10px;
+        text-align: center;
             }
-
-.nav ul {
-    *zoom:1;
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-.nav ul:before,.nav ul:after {
-    content:"";
-    display:table;
-}
-.nav ul:after {
-    clear:both;
-}
-.nav ul > li {
-    float:left;
-    position:relative;
-}
-.nav a {
-    display:block;
-    padding:10px 20px;
-    line-height:1.2em;
-    color:#fff;
-}
-.nav a:hover {
-    text-decoration:none;
-    background:#940606;
-}
-.nav li ul li {
-    width:200px;
-}
-.nav li ul a {
-    border:none;
-}
-
-.nav li ul {
-    position:absolute;
-    left:0;
-    top:36px;
-    z-index:1;
-    visibility:hidden;
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition:200ms ease;
-    -moz-transition:200ms ease;
-    -o-transition:200ms ease;
-    transition:200ms ease;
-}
-.nav ul > li:hover ul {
-    visibility:visible;
-    opacity:1;
-    filter:alpha(opacity=100);
-}
+    .nav ul {
+        *zoom:1;
+        list-style:none;
+        margin:0;
+        padding:0;
+            }
+    .nav ul:before,.nav ul:after {
+        content:"";
+        display:table;
+            }
+    .nav ul:after {
+        clear:both;
+            }
+    .nav ul > li {
+        float:left;
+        position:relative;
+            }
+    .nav a {
+        display:block;
+        padding:10px 20px;
+        line-height:1.2em;
+        color:#fff;
+            }
+    .nav a:hover {
+        text-decoration:none;
+        background:#940606;
+            }
+    .nav li ul li {
+        width:200px;
+            }
+    .nav li ul a {
+        border:none;
+            }
+    .nav li ul {
+        position:absolute;
+        left:0;
+        top:36px;
+        z-index:1;
+        visibility:hidden;
+        opacity:0;
+        filter:alpha(opacity=0);
+        -webkit-transition:200ms ease;
+        -moz-transition:200ms ease;
+        -o-transition:200ms ease;
+        transition:200ms ease;
+            }
+    .nav ul > li:hover ul {
+        visibility:visible;
+        opacity:1;
+        filter:alpha(opacity=100);
+            }
     </style>
 </head>
 <body>
